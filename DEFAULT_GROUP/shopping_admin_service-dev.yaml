@@ -1,0 +1,41 @@
+# 端口号
+server:
+  port: 9002
+
+# 日志格式
+logging:
+  pattern:
+    console: '%d{HH:mm:ss.SSS} %clr(%-5level) ---  [%-15thread] %cyan(%-50logger{50}):%msg%n'
+
+spring:
+  application:
+    name: shopping_admin_service #服务名
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.66.100:8848
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///baizhanshopping?serverTimezone=UTC
+    username: root
+    password: root
+
+dubbo:
+  application:
+    name: shopping_admin_service
+    serialize-check-status: DISABLE
+    check-serializable: false
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.66.100:8848
+
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: bz_
+      id-type: auto
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
