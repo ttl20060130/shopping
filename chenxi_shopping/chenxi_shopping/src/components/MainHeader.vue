@@ -3,7 +3,7 @@
     <div class="header">
         <div class="box">
             <span>
-                <img src="../assets/logo2.png" alt="">
+                <h1>晨曦商城</h1>
                 <!-- <h1>商城</h1> -->
             </span>
             <div class="search_box">
@@ -121,12 +121,13 @@ img {
     width: 250px;
 }
 
-/* h1 {
+h1 {
     display: inline;
     color: var(--primary-color);
     position: relative;
     top: 10px;
-} */
+    font-size: 32px;
+}
 
 .title {
     display: inline;

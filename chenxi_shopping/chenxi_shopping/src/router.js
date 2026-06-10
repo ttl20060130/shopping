@@ -61,7 +61,6 @@ const routes = [
     name: 'seckillpay',
     component: () => import(/* webpackChunkName: "seckillpay" */ './views/seckill/Pay.vue')
   },
-  
   {
     path: '/login',
     name: 'login',

@@ -1,7 +1,7 @@
 <template>
     <!-- <div class="con"> -->
     <div class="header">
-        <img src="../assets/logo2.png" alt="">
+        <h1>晨曦商城</h1>
         <!-- <h1>商城</h1> -->
         <div class="title">欢迎{{ title }}</div>
         <slot></slot>
@@ -37,6 +37,7 @@ h1 {
     color: var(--primary-color);
     position: relative;
     top: 10px;
+    font-size: 32px;
 }
 
 .title {
