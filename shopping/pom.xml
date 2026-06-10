@@ -51,6 +51,14 @@
         <module>shopping_seckill_service</module>
         <!-- 秒杀api -->
         <module>shopping_seckill_customer_api</module>
+        <!-- AI客服服务 -->
+        <module>shopping_custcare_service</module>
+        <!-- AI客服api -->
+        <module>shopping_custcare_customer_api</module>
+        <!-- 邮件服务 -->
+        <module>shopping_mail_service</module>
+        <!-- Webhooks告警 -->
+        <module>shopping_webhooks</module>
     </modules>
 
     <properties>

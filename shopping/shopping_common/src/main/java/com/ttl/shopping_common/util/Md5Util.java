@@ -3,7 +3,7 @@ package com.ttl.shopping_common.util;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class Md5Util {
-  public final static String md5key = "BAIZHAN"; // 秘钥
+  public final static String md5key = "DAWN"; // 秘钥
 
 
   /**

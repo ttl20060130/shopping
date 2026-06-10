@@ -1,0 +1,11 @@
+1|spring:
+2|  profiles:
+3|    active: dev #环境
+4|  cloud:
+5|    nacos:
+6|      config:
+7|        server-addr: 192.168.66.100:8848
+8|        namespace: 5455dc7a-b343-4866-a973-96d5cc1d9312
+9|        file-extension: yaml
+10|        prefix: shopping_custcare_service
+11|

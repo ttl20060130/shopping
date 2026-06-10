@@ -54,7 +54,7 @@ public class OrdersServiceImpl implements OrdersService {
 
         // 发送延时消息，30m后判断订单是否支付
         // 延时等级1到16分别表示 1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h
-        rocketMQTemplate.syncSend(CHECK_ORDERS_QUEUE, MessageBuilder.withPayload(orders.getId()).build(), 15000, 4);
+        rocketMQTemplate.syncSend(CHECK_ORDERS_QUEUE, MessageBuilder.withPayload(orders.getId()).build(), 15000, 16);
         return orders;
     }
 
